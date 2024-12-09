@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Head>
-        <title>Hecto Commerce</title>
+        <title>Hecto Furniture ali</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
       <ThemeProvider defaultTheme='light' attribute='class'>
