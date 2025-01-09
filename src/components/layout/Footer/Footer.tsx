@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
+import styles from '../../../styles/huz.module.css'
 
 const Footer = () => {
   const footerIcon = [
@@ -50,7 +51,7 @@ const Footer = () => {
           <div className="md:flex justify-between md:py-24">
             <div className="flex flex-col md:w-[402px] md:gap-6">
               <h2>Hekto</h2>
-              <div className="flex flex-col md:flex-row items-center gap-4 md:mt-8">
+              <div className={`${styles.huz_css} flex flex-col md:flex-row items-center gap-4 md:mt-8`}>
                 <input
                   type="search"
                   className="text-left md:w-[63%] w-full p-2 text-gray-700 border border-solid border-gray-300 focus:bg-white focus:border-blue-600 focus:outline-none"

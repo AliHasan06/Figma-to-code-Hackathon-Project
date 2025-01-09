@@ -1,0 +1,7 @@
+
+@media (max-width: 1300px) and (min-width: 768px) {
+    .huz_css{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
