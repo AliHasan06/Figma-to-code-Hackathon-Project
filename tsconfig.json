@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -14,22 +18,27 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "src",  // Set baseUrl to src folder
     "paths": {
-      "@utils/*": ["src/utils/*"],
-      "@services/*": ["src/services/*"],
-      "@components/*": ["src/components/*"]
-    }
+      "@utils/*": ["app/utils/*"],    // Correct path alias
+      "@services/*": ["app/services/*"], // Correct path alias
+      "@components/*": ["app/components/*"]  // Correct path alias
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
-    "next-env.d.ts",
-    "src",
     "src/**/*.ts",
     "src/**/*.tsx",
     "@types/**/*.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "my-preset.js"
+    "my-preset.js",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ]
 }

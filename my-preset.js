@@ -1,8 +1,11 @@
 module.exports = {
+  experimental: {
+    appDir: true, // Enables the App Router
+  },
   mode: 'jit',
   content: [
-    './src/components/**/*.{ts,tsx,js,jsx}',
-    './src/pages/**/*.{ts,tsx,js,jsx}',
+    './app/**/*.{ts,tsx,js,jsx}', // Scan all files in the app directory
+    './components/**/*.{ts,tsx,js,jsx}', // Include the components directory if it's outside app/
   ],
   safelist: [
     {
@@ -10,7 +13,7 @@ module.exports = {
         /(bg|border|text)-(slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(100|200|300|400|500|600|700|800|900)/,
     },
   ],
-  darkMode: 'class',
+  darkMode: 'class', // Enable dark mode using the 'class' strategy
   theme: {
     extend: {
       colors: {
@@ -18,8 +21,7 @@ module.exports = {
         secondary: '#E5E0FC',
         tertiary: '#9295AA',
         sky_blue: '#F9F8FE',
-        dark_sky_blue: '#F8F8FD',
-        dark_sky_blue: '#F4F4FC',
+        dark_sky_blue: '#F4F4FC', // Retained one definition
         lightGreen: '#19D16F',
         lightGray2: '#FAFAFB',
         lightGray: '#F0EFF2',
@@ -28,10 +30,6 @@ module.exports = {
         lightYellow2: '#FFECE2',
         lightPink: '#FFE7F9',
         lightPink2: '#F2F0FF',
-
-      
-
-
         purple: '#7E33E0',
         pink: '#FB2E86',
         navy: '#151875',
@@ -62,14 +60,10 @@ module.exports = {
         pink_random: '#F9F8FE',
       },
       fontFamily: {
-        lato: ["Lato"],
-        josefin: ["Josefin Sans"],
-
+        lato: ['Lato'], // Font families
+        josefin: ['Josefin Sans'],
       },
-
-  
     },
   },
-  variants: {},
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms')], // Tailwind CSS forms plugin
 };
