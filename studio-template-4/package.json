@@ -15,19 +15,20 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/client": "^6.27.1",
-    "@sanity/vision": "^3.71.2",
-    "dotenv": "^16.4.7",
+    "@sanity/vision": "^3.74.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.71.2",
+    "sanity": "^3.74.1",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.1",
     "@types/react": "^18.0.25",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9.9.0",
+    "postcss": "^8.5.1",
     "prettier": "^3.0.2",
+    "tailwindcss": "^4.0.4",
     "typescript": "^5.1.6"
   },
   "prettier": {

@@ -8,7 +8,7 @@ const Demo = () => {
 
         <div className='bg-shade2'>
             <div className="lg:container lg:px-[1.3rem] px-[.8rem] py-[124px]">
-                <h2 className='text-navy'>Hekto Demo</h2> 
+                <h2 className='text-navy'>Cart</h2> 
             </div>
         </div>
 

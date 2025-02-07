@@ -4,7 +4,7 @@ const ShippingInfo = () => {
   return (
     <div>
         <div className='md:mt-20 mt-8 '>
-            <h3 className='text-navy text-[24px] mt-4'>Hekto Demo</h3>
+            <h3 className='text-navy text-[24px] mt-4'>CART</h3>
             <p className='text-navy  mt-4 mb-5'>Cart/ Information/ Shipping/ Payment</p>
 
         </div>
